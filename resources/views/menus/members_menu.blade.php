@@ -53,7 +53,7 @@
 
                 <a class="waves-effect waves-cyan"
 
-                   href="#!" data-i18n="">
+                   href="{{route('user_downline_tree', app('current_user')->username)}}" data-i18n="">
 
                     <i class="material-icons">radio_button_unchecked</i>
 

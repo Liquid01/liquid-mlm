@@ -217,7 +217,7 @@ Route::group(['prefix' => 'member', 'middleware' => 'members'], function () {
 
 
 //    user check stage matrix
-    // Route::get('/my_downline_tree/{username}', 'MatrixController@user_downline_tree')->name('user_downline_tree');
+    Route::get('/my_downline_tree/{username}', 'MatrixController@user_downline_tree')->name('user_downline_tree');
     Route::get('/stage_matrix', 'MatrixController@get_stage_matrix')->name('get_stage_matrix');
     Route::get('/update_user_matrix/{username}', 'MatrixController@update_stage_matrix')->name('update_stage_matrix');
 

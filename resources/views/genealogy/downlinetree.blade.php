@@ -55,21 +55,21 @@
                                             <div class="hide-on-large-only hide-on-med-only tree_small">
 
                                                 <div class="row">
-                                                    <div class="col s2 offset-s5">
+                                                    <div class="col s2 offset-s5" style="justify-content: center">
                                                         <a href="{{route('user_downline_tree', $username == null ? auth()->user()->username : $username)}}"
                                                            class="d-container mb-2 tooltipped" data-position="bottom" data-tooltip="I am a tooltip">
                                                             <div class="circle"
-                                                                 style="width:30px; border: 1px solid #000; height: 30px; background:yellow; border-radius: 50%; margin-bottom:20px;">
-                                                                <img src="{{asset('assets/img/avatar2.png')}}"
+                                                                 style="width:40px; border: 1px solid #000; height: 40px; background:yellow; border-radius: 50%; margin-bottom:20px;">
+                                                                <img src="{{asset('assets/img/favicon.png')}}"
                                                                      class="img-responsive img-circle circle"
-                                                                     style="max-width:100%;" alt="">
-                                                                <p class="text-center">{{$username == null ? auth()->user()->username : $username}}</p>
+                                                                     style="max-width:100px;" alt="">
                                                             </div>
-
                                                             {{--if the downlines are not in the array, let there be a circle for the following diagrams--}}
                                                         </a>
+                                                        <p class="text-center" style="font-size: 10px; color: #000000; margin-top: -20px;">{{$username == null ? auth()->user()->username : $username}}</p>
                                                     </div>
                                                 </div>
+
                                                 @isset($first_downlines)
                                                     <div class="row">
                                                         <div class="col s2 offset-s2">
@@ -227,14 +227,13 @@
                                                            class="d-container mb-2 tooltipped" data-position="bottom" data-tooltip="{{$username}}">
                                                             <div class="circle"
                                                                  style="width:70px; border: 1px solid #000; height: 70px; background:yellow; border-radius: 50%; margin-bottom:20px;">
-                                                                <img src="{{asset('assets/img/avatar2.png')}}"
+                                                                <img src="{{asset('assets/img/favicon.png')}}"
                                                                      class="img-responsive img-circle circle"
                                                                      style="max-width:70px;" alt="">
-                                                                <p class="text-center">{{$username == null ? auth()->user()->username : $username}}</p>
                                                             </div>
-
                                                             {{--if the downlines are not in the array, let there be a circle for the following diagrams--}}
                                                         </a>
+                                                        <p class="text-center" style="margin-top: -20px">{{$username == null ? auth()->user()->username : $username}}</p>
                                                     </div>
                                                 </div>
                                                 @isset($first_downlines)
