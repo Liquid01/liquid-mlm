@@ -133,10 +133,7 @@
         </div>
     </div>
     <!-- wpo-case-area end -->
-<<<<<<< HEAD
 
     @include('includes.rank')
 
-=======
->>>>>>> 82d8d871c0281aa43b614c3645a3a4d5c4d69431
 @endsection
