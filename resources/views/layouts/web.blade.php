@@ -67,7 +67,7 @@
 {{--                    </div>--}}
                     <div class="col col-md-3 col-sm-12">
                         <div class="contact-info">
-                            <ul class="pull-right">
+                            <ul class="pull-left">
                                 <li><a href="{{route('login')}}">Login</a></li>
                                 <li><a href="{{route('register')}}">Register</a></li>
                                 {{--                                <li><a class="theme-btn" href="#!">Purchase</a></li>--}}
