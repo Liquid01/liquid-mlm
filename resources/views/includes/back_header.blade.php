@@ -3,17 +3,14 @@
     <div class="navbar navbar-fixed">
 
         <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark no-shadow"
-             style="background: #FFFFFF!important;">
+             style="background: #222!important;">
 
             <div class="nav-wrapper">
 
-                {{--                <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>--}}
-
-                {{--                    <input class="header-search-input z-depth-2" type="text" name="Search"--}}
-
-                {{--                           placeholder="Explore Your Account">--}}
-
-                {{--                </div>--}}
+                <div class="header-search-wrapper hide-on-med-and-down"><i class="material-icons">search</i>
+                    <input class="header-search-input z-depth-2" type="text" name="Search"
+                           placeholder="Explore Your Account">
+                </div>
 
                 <ul class="navbar-list right">
 
@@ -161,7 +158,7 @@
 
                         <a class="grey-text text-darken-1 " onclick="document.getElementById('logout').submit();"><i
 
-                                class="material-icons">keyboard_tab</i> Logout</a>
+                                    class="material-icons">keyboard_tab</i> Logout</a>
 
                     </li>
 
@@ -183,9 +180,9 @@
 
                             <label class="label-icon" for="search"><i
 
-                                    class="material-icons search-sm-icon">search</i></label><i
+                                        class="material-icons search-sm-icon">search</i></label><i
 
-                                class="material-icons search-sm-close">close</i>
+                                    class="material-icons search-sm-close">close</i>
 
                         </div>
 

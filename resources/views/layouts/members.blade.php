@@ -159,7 +159,7 @@
         data-menu="menu-navigation" data-collapsible="menu-accordion">
 
 
-        @if(app('current_user') != null && app('current_user')->packa_id < 5)
+        @if(app('current_user') != null)
             @include('menus.members_menu')
             @include('includes.categories_menu')
         @endif

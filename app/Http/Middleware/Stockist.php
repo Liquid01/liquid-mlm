@@ -15,7 +15,7 @@ class Stockist
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->user() && auth()->user()->package_id < 5)
+        if (auth()->user() && auth()->user()->package_id < 6)
         {
             abort(401);
         }

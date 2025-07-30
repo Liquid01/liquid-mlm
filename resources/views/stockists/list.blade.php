@@ -8,7 +8,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="wpo-breadcumb-wrap">
-                        <h2>Product Stockists</h2>
+                        <h2>WNH Stockists</h2>
                         <ul>
                             <li><a href="{{route('homepage')}}">Home</a></li>
                             <li><span>Stockists</span></li>
@@ -78,44 +78,47 @@
                             @php
                                 $n=0;
                             @endphp
-                            @foreach($stores as $store)
-                                <div class="col-md-4 col-sm-6 col-12" style="height: 300px;">
-                                    <div class="wpo-event-item">
-                                        {{--                                        <div class="wpo-event-img">--}}
-                                        {{--                                            <img src="{{asset('assets/images/stockists/miracleseed-stockist.png')}}"--}}
-                                        {{--                                                 alt="">--}}
-                                        {{--                                            <div class="thumb-text">--}}
-                                        {{--                                                <span style="">ON</span>--}}
-                                        {{--                                                <span>STOCK</span>--}}
-                                        {{--                                            </div>--}}
-                                        {{--                                        </div>--}}
-                                        <div class="wpo-event-text">
-                                            {{--                                            <h6>{{$store->user->username}}</h6>--}}
-                                            <h6>{{$store->name}}</h6>
-                                            <div>
-                                                <p style="font-size: 13px;"><i class="fi flaticon-pin"></i>
-                                                    {{substr($store->address1. ' '. $store->address2 . ' '. $store->city, 0, 80)}}
-                                                    ...
-                                                    <br>
-                                                    {{$store->state. ', '. $store->country}}.
-                                                </p>
 
-                                                <p style="font-size: 13px;">
+                            @if(count($stores) > 0)
+                                @foreach($stores as $store)
+                                    <div class="col-md-4 col-sm-6 col-12" style="height: 300px;">
+                                        <div class="wpo-event-item">
+                                            {{--                                        <div class="wpo-event-img">--}}
+                                            {{--                                            <img src="{{asset('assets/images/stockists/miracleseed-stockist.png')}}"--}}
+                                            {{--                                                 alt="">--}}
+                                            {{--                                            <div class="thumb-text">--}}
+                                            {{--                                                <span style="">ON</span>--}}
+                                            {{--                                                <span>STOCK</span>--}}
+                                            {{--                                            </div>--}}
+                                            {{--                                        </div>--}}
+                                            <div class="wpo-event-text">
+                                                {{--                                            <h6>{{$store->user->username}}</h6>--}}
+                                                <h6>{{$store->name}}</h6>
+                                                <div>
+                                                    <p style="font-size: 13px;"><i class="fi flaticon-pin"></i>
+                                                        {{substr($store->address1. ' '. $store->address2 . ' '. $store->city, 0, 80)}}
+                                                        ...
+                                                        <br>
+                                                        {{$store->state. ', '. $store->country}}.
+                                                    </p>
 
-                                                    <i class="fi fa fa-phone" aria-hidden="true"></i>
-                                                    {{$store->phone}} <br>
-                                                    <i class="fi fa fa-phone" aria-hidden="true"></i>
-                                                    {{$store->phone2?$store->phone2:'Nil'}}
-                                                </p>
+                                                    <p style="font-size: 13px;">
+
+                                                        <i class="fi fa fa-phone" aria-hidden="true"></i>
+                                                        {{$store->phone}} <br>
+                                                        <i class="fi fa fa-phone" aria-hidden="true"></i>
+                                                        {{$store->phone2?$store->phone2:'Nil'}}
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                @if (++$n % 3 == 0)
-                                    <div class='clearfix'></div>
-                                @endif
-                            @endforeach
+                                    @if (++$n % 3 == 0)
+                                        <div class='clearfix'></div>
+                                    @endif
+                                @endforeach
+                            @endif
                         </div>
                     </div>
                     <div>{{$stores->links()}}</div>

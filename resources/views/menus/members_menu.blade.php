@@ -1,80 +1,42 @@
 <li class="active bold">
-
     {{--                <a class=" waves-effect waves-cyan {{$data['page_title'] == 'dashboard'? 'active': ''}}" href="{{route('dashboard')}}">--}}
-
     <a class=" waves-effect waves-cyan" href="{{route('dashboard')}}">
-
         <i class="material-icons">device_hub</i>
-
         <span class="menu-title" data-i18n="">Dashboard</span></a>
-
 </li>
-
 <li>
-
     <a class="waves-effect waves-cyan" href="{{route('my_profile')}}" data-i18n="">
-
         <i class="material-icons">device_hub</i>
-
         <span>Profile</span>
-
     </a>
-
 
 </li>
-
 <li class="bold">
-
     <a class="collapsible-header waves-effect waves-cyan " href="#">
-
         <i class="material-icons">device_hub</i>
-
         <span class="menu-title" data-i18n="">My Tree</span>
-
     </a>
-
     <div class="collapsible-body">
-
         <ul class="collapsible collapsible-sub" data-collapsible="accordion">
-
             <li>
-
                 <a class="waves-effect waves-cyan" href="#" data-i18n="">
-
                     <i class="material-icons">radio_button_unchecked</i>
-
                     <span>All Descendants</span>
-
                 </a>
-
             </li>
-
             <li>
-
                 <a class="waves-effect waves-cyan"
-
                    href="#!" data-i18n="">
-
                     <i class="material-icons">radio_button_unchecked</i>
-
                     <span>My Tree</span>
-
                 </a>
-
             </li>
-
             <li>
-
                 <a class="waves-effect waves-cyan"
-
                    href="#!" data-i18n="">
-
                     <i class="material-icons">radio_button_unchecked</i>
-
                     <span>My Referrals</span>
-
                 </a>
-
             </li>
 
             {{--            <li>--}}
@@ -90,11 +52,8 @@
             {{--                </a>--}}
 
             {{--            </li>--}}
-
         </ul>
-
     </div>
-
 </li>
 
 
@@ -130,13 +89,13 @@
 
                 </a>
 
-{{--                <a class="waves-effect waves-cyan" href="{{route('member_matchings_within')}}" data-i18n="">--}}
+                {{--                <a class="waves-effect waves-cyan" href="{{route('member_matchings_within')}}" data-i18n="">--}}
 
-{{--                    <i class="material-icons">archive</i>--}}
+                {{--                    <i class="material-icons">archive</i>--}}
 
-{{--                    <span>Matchings</span>--}}
+                {{--                    <span>Matchings</span>--}}
 
-{{--                </a>--}}
+                {{--                </a>--}}
 
                 <a class="waves-effect waves-cyan" href="{{route('member_withdrawals')}}" data-i18n="">
 
@@ -205,7 +164,7 @@
 
     <li>
 
-        <a class="waves-effect waves-cyan" style="color:orange" href="#!" data-i18n="">
+        <a class="waves-effect waves-cyan" style="color:orange" href="{{route('stockist_dashboard')}}" data-i18n="">
 
             <i class="material-icons" style="color:darkorange;">settings</i>
 
@@ -216,9 +175,6 @@
     </li>
 
 @endif
-
-
-
 <li>
 
     <a class="waves-effect waves-cyan" href="{{url('/')}}" data-i18n="">

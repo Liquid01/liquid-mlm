@@ -1,5 +1,14 @@
-
-
+<style>
+    li a{
+        color:yellow!important;
+    }
+    li a>i{
+        color:darkorange!important;
+    }
+    li {
+        background-color: #262525 !important; color:darkorange!important;
+    }
+</style>
 <li class="bold">
 
     <a class="collapsible-header waves-effect waves-cyan " href="#">

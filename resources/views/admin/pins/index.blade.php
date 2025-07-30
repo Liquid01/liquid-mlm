@@ -82,7 +82,7 @@
                                                                 <hr>
                                                                 <p><strong style="color:darkorange; font-weight:bold;">SERIAL:</strong> {{$pin->serial}}</p>
                                                                 <p><strong style="color:darkorange; font-weight:bold;">CODE: </strong>{{$pin->code}}</p>
-                                                                <p><strong style="color:{{$pin->status == 0? 'green':'orangered'}}; font-weight:bold;">STATUS: {{$pin->status == 0? 'Unused':'Used'}}</strong>
+                                                                <p><strong style="color:{{$pin->status == 0? 'green':'orangered'}}; font-weight:bold;">STATUS: {{$pin->status == 0? 'Unused':'Used'.$pin->used_date. ' '. 'Used By: '.$pin->used_by}}</strong>
                                                                 </p>
                                                                 <hr>
                                                                 <small><strong>STOCKIST: {{$pin->created_by}}</strong></small><br>

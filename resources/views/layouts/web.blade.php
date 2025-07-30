@@ -52,25 +52,11 @@
         <div class="topbar">
             <div class="container">
                 <div class="row">
-{{--                    <div class="col col-md-5 col-sm-7 col-12">--}}
-{{--                        <div class="contact-intro">--}}
-{{--                            <ul>--}}
-{{--                                <li><i class="fi flaticon-call"></i>+234 803 410 8410</li>--}}
-{{--                                <li><i class="fi flaticon-envelope"></i>info@walnuthealthcare.com</li>--}}
-{{--                            </ul>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-
-
-{{--                    <div class="col col-md-4 col-sm-5 col-12">--}}
-{{--                        @include('scripts.countdown')--}}
-{{--                    </div>--}}
                     <div class="col col-md-3 col-sm-12">
                         <div class="contact-info">
                             <ul class="pull-left">
                                 <li><a href="{{route('login')}}">Login</a></li>
                                 <li><a href="{{route('register')}}">Register</a></li>
-                                {{--                                <li><a class="theme-btn" href="#!">Purchase</a></li>--}}
                             </ul>
                         </div>
                     </div>
@@ -107,7 +93,7 @@
                             <a href="{{route('compensation')}}">Marketing Plan</a>
                         </li>
                         <li>
-                            <a href="#!">Distributors</a>
+                            <a href="{{route('stockists')}}">Distributors</a>
                         </li>
                         <li>
                             <a href="{{route('guestshop')}}">Shop</a>
@@ -170,8 +156,8 @@
     <div class="wpo-ne-footer">
         <!-- start wpo-news-letter-section -->
         <section class="wpo-news-letter-section" style="background: #1e7301;
-background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgba(145, 106, 54, 1) 100%);">
-            <div class="container" >
+background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgb(163,215,13) 100%);">
+            <div class="container">
                 <div class="row">
                     <div class="col col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
                         <div class="wpo-newsletter">
@@ -191,8 +177,9 @@ background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgba(145, 106, 54, 1)
         </section>
         <!-- end wpo-news-letter-section -->
         <!-- start wpo-site-footer -->
-        <footer class="wpo-site-footer" style="background: #1e7301;
-background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgba(145, 106, 54, 1) 100%);">
+        <footer class="wpo-site-footer"
+                style="padding-top: 80px; background: #1e7301;
+                background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgb(32,103,2) 100%);">
             <div class="wpo-upper-footer">
                 <div class="container">
                     <div class="row">
@@ -203,7 +190,7 @@ background: linear-gradient(90deg, rgba(30, 115, 1, 1) 0%, rgba(145, 106, 54, 1)
                                 </div>
                                 <p>
                                     Join a community of healthy and wealthy people sharing and earning together.
-                                    wpo-features
+
                                 </p>
                                 <ul>
                                     <li><a href="#"><i class="ti-facebook"></i></a></li>
