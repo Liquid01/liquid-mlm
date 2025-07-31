@@ -9,7 +9,13 @@
     <meta name="description" content="Walnut healthcare is a world of successful entrepreneurs">
     <meta name="keywords" content="Walnut Healthcare: Dashboard">
     {{--<meta name="author" content="ThemeSelect">--}}
+<<<<<<< Updated upstream
     <title>Walnut Healthcare Limited @yield('page_title') </title>
+=======
+
+    <title>Walnut Healthcare Limited @yield('page_title') </title>
+
+>>>>>>> Stashed changes
     <link rel="apple-touch-icon" href="{{asset('assets/img/favicon.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}">
 {{--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--}}
