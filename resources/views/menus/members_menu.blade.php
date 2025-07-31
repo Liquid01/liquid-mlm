@@ -51,14 +51,10 @@
 
             <li>
 
-                <a class="waves-effect waves-cyan"
-
-                   href="{{route('user_downline_tree', app('current_user')->username)}}" data-i18n="">
-
+                <a class="waves-effect waves-cyan" href="{{route('user_downline_tree', app('current_user')->username)}}"
+                   data-i18n="">
                     <i class="material-icons">radio_button_unchecked</i>
-
                     <span>My Tree</span>
-
                 </a>
 
             </li>
@@ -130,13 +126,13 @@
 
                 </a>
 
-{{--                <a class="waves-effect waves-cyan" href="{{route('member_matchings_within')}}" data-i18n="">--}}
+                {{--                <a class="waves-effect waves-cyan" href="{{route('member_matchings_within')}}" data-i18n="">--}}
 
-{{--                    <i class="material-icons">archive</i>--}}
+                {{--                    <i class="material-icons">archive</i>--}}
 
-{{--                    <span>Matchings</span>--}}
+                {{--                    <span>Matchings</span>--}}
 
-{{--                </a>--}}
+                {{--                </a>--}}
 
                 <a class="waves-effect waves-cyan" href="{{route('member_withdrawals')}}" data-i18n="">
 
@@ -220,23 +216,17 @@
 
 
 <li>
-
     <a class="waves-effect waves-cyan" href="{{url('/')}}" data-i18n="">
         <i class="material-icons">web</i>
         <span>Website</span>
-
     </a>
-
 </li>
 
 <li>
-
     <a class="waves-effect waves-cyan" href="{{route('member_request')}}" data-i18n="">
         <i class="material-icons">web</i>
         <span>Requests</span>
-
     </a>
-
 </li>
 
 
