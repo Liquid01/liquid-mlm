@@ -4,12 +4,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 
-    <metahttp-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
     <meta name="description" content="Walnut healthcare is a world of successful entrepreneurs">
     <meta name="keywords" content="Walnut Healthcare: Dashboard">
     {{--<meta name="author" content="ThemeSelect">--}}
-    <title>Walnut Healthcare @yield('page_title') </title>
+    <title>Walnut Healthcare Limited @yield('page_title') </title>
     <link rel="apple-touch-icon" href="{{asset('assets/img/favicon.png')}}">
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('assets/images/favicon.png')}}">
 {{--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">--}}
@@ -481,15 +481,14 @@
 
         <div class="container">
 
-            <span>&copy; 2023
-
-                <a href="{{url('/')}}" target="_blank">miracleseed</a> All rights reserved.
+            <span>&copy; 2025
+                <a href="{{url('/')}}" target="_blank">Walnut Healthcare Limited</a> All rights reserved.
 
             </span>
 
             <span class="right hide-on-small-only">
 
-                <a href="#">LIS</a>
+                <a href="https://learn.mylifeseed.org">L'EARN</a>
 
             </span>
 

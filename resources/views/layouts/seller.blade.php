@@ -540,7 +540,7 @@
 
                 <li>
 
-                    <a href="{{url('/')}}">Miracleseed</a>
+                    <a href="{{url('/')}}">Walnut Healthcare</a>
 
                 </li>
 
