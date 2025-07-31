@@ -26,7 +26,7 @@
             </li>
             <li>
                 <a class="waves-effect waves-cyan"
-                   href="#!" data-i18n="">
+                   href="{{route('user_downline_tree', auth()->user()->username)}}" data-i18n="">
                     <i class="material-icons">radio_button_unchecked</i>
                     <span>My Tree</span>
                 </a>
